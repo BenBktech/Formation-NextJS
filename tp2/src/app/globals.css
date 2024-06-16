@@ -1,6 +1,26 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
+
+.colorInfo {
+  @apply w-5 h-5 border mr-2;
+}
+
+.colorInfo.carbohydrates {
+  @apply bg-[#F28907];
+}
+
+.colorInfo.protein {
+  @apply bg-[#5079F2];
+}
+
+.colorInfo.fat {
+  @apply bg-[#F2220F];
+} 
+
+.title_colored {
+  @apply bg-gradient-to-r from-[#75fd38] to-[#e1f3ab] bg-clip-text text-transparent;
+}
 
   @layer base {
     :root {
